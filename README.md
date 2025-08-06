@@ -20,7 +20,7 @@ git commit = yaptığımızdeğişiklikten sonra bu komut ile değişikliliği k
 git push = commitledğimiz dosyayı uzak sunucudaki repoya gönderir.␣␣ <br>
 git pull = uzak sunucudaki dosyalarda bir değişiklik oluştuysa kendi local proje dosyaları ile birleştirir.␣␣ <br>
 git merge = iki farklı branchı birleştirmeye yarar.␣␣ <br>
-git clone = mevcut bir git reposunun bir kopyasını almak istediğimizde bu komutu kullanırız.␣␣ <br>
+git clone = mevcut bir git reposunun bir kopyasını almak istediğimizde bu komutu kullanırız.␣␣ 
 
 
 CI/CD NEDİR?␣␣ <br>
@@ -39,7 +39,7 @@ CD: Publish + Deploy␣␣ <br>
 dotnet publish : deploy edilecek klasörü hazırlar(Çalıştırabilir hale getirilir.)␣␣ <br>
 Azure Web app'a atılır␣␣ <br>
 Docker image oluşturulur␣␣ <br>
-IIS'e deploy edilir␣␣ <br>
+IIS'e deploy edilir␣␣ 
 
 
 
@@ -62,7 +62,7 @@ otomatik oluşturma,test etme ve dağıtım işlemlerini kolaylaştıran CI/CD a
 Azure Testplans␣␣ <br>
 kullanıcıların test gereksinimlerini yönetebilmek için bulut tabanlı test platformunu entegre edebilemey olanak sağlar.␣␣ <br>
 Azure Artifactss␣␣ <br>
-paketleri oluşturmak, depolamak ve paylaşmak için kullanılan yapıt kitaplığı hizmetidirkullanıcıların tüm özelliklere sahip paket yönetimi işlevlerini CI/CD kanallarına entegre etmelerini sağlar.␣␣ <br>
+paketleri oluşturmak, depolamak ve paylaşmak için kullanılan yapıt kitaplığı hizmetidirkullanıcıların tüm özelliklere sahip paket yönetimi işlevlerini CI/CD kanallarına entegre etmelerini sağlar.␣␣ 
 
 
 
@@ -92,7 +92,7 @@ Agile metodolojisinin parçası olan bir çerçevedir.bu çerçeve belirli rolle
 Scrum takımında Roller␣␣ <br>
 1.Scrum Master : takımın kurallara uygun çalışmasını sağlar ve engelleri kaldırır.işbirliğini teşvik eder.Motivasyonu yüksek tutarak projenin hedeflerine ulaşmasını sağlar.␣␣ <br>
 2.Product Owner:müşteri gereksinimini belirler.Müşteriden gelen feedbackleri toplar ve buna göre öncelikleri belirler.␣␣ <br>
-3.Geliştirme Takımı :yazılım geliştiren ve teslim eden ekip üyelerinde oluşur.belirlenen hedeflere ulaşmak için birlikte çalışır ve her sprint sonunda işlevsel bir yazılım parçasını tamamlar.␣␣ <br>
+3.Geliştirme Takımı :yazılım geliştiren ve teslim eden ekip üyelerinde oluşur.belirlenen hedeflere ulaşmak için birlikte çalışır ve her sprint sonunda işlevsel bir yazılım parçasını tamamlar.␣␣ 
 
 
 
@@ -105,7 +105,7 @@ pipline ,bir veya birden fazla görev ve bu görevlerin içinde yer alan steps(a
 3. Yapılandırma Dosyası␣␣ <br>
 GitHub Actions iş akışları, projenin kök dizininde yer alan .github/workflows/ klasörü altında bir YAML dosyası olarak tanımlanır. Bu dosyada, iş akışının hangi olayla tetikleneceği, hangi sistemde çalışacağı ve hangi adımların gerçekleştirileceği belirtilir.␣␣ <br>
 Örnek: Basit Bir "Hello World" Workflow␣␣ <br>
-Bu örnek yapı, her push işlemi gerçekleştiğinde tetiklenir ve basit bir mesajı terminale yazdırır. Örnekte bir adet job ve onun içinde bir adet step yer almaktadır.␣␣ <br>
+Bu örnek yapı, her push işlemi gerçekleştiğinde tetiklenir ve basit bir mesajı terminale yazdırır. Örnekte bir adet job ve onun içinde bir adet step yer almaktadır.␣␣ 
 
 
 
@@ -146,7 +146,7 @@ Zaman Tasarufu␣␣ <br>
 Yüksek performanslı uygulamalar oluşturma␣␣ <br>
 Güvenilirlik␣␣ <br>
 Zengin Kaynak ve kitaplıklar␣␣ <br>
-Topluluk desteği␣␣ <br>
+Topluluk desteği␣␣ 
 
 
 <img width="554" height="479" alt="image" src="https://github.com/user-attachments/assets/c2a31f66-db2a-49e5-b500-2b2773b17c3a" />
@@ -184,19 +184,6 @@ Console.WriteLine(karesi(5)); // 25<br>
 public int Topla(int a, int b) => a + b;<br>
 3. Property<br>
 public string Ad => "baba"; // readonly, expression-style property<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
