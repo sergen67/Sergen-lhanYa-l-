@@ -1,152 +1,152 @@
 Git nedir
-2005 yılında ilk sürümü yayınlanan git,2009 yılına kadar linux ile iç içe olan dağıtık versiyon kontrol sistemiydi.2009 yılında GitHubın açık kaynak projeler için ücretsiz bir şekilde hizmet vermesi aynı yıllarda Bitbucket ve GitLabın benzer git servisleri sağlamaya başlaması geniş bir kitleye ulaşmasını sağladı.
-dağıtık bir sürüm kontrol sistemidir.
-herhangi bir klosör komutlarla yeni bir git dosya deposu haline gelebilir.
-depolarda .git uzantısına sahip alt klasörler vardır.bu uzantıya sahip dosyalar güncel sürümleri ve eski sürümleri içerir.
-kendi projenizi versiyon kontrolü altına almak istediğiniz de git init komutu ile bunu sağlayabiliriz
-Windowsta git bash uygulaması ile yapılır.komutları aşağıda
-$ cd proje/klasörünüzün/yolu/
-$ git init
-Repistory = projenin uzak bir sunucuda depolanması .kısaltılmış hali repo dur
-Branch = Ana branch ve yan branch olarak ikye ayrılır.Bu yapı sayesinde ana yapıyı bozmadan yan branchlarla proje geliştirilebilir
-Master= Reponun Ana alanı .
-Commit = yapılan değişiklikleri saklayıp kaydedilmesine yarar.
-Chechout = commitler üzerinden geçiş yapmamızı sağlar.
-Fork = Reponun bir araya getirilmesidir.kopya üzerinde değişiklik yapıldıktan sonra ana depoya gönderilmesidir.
-git init = bu komut ile proje dizininde git dizini oluşturulur.burada prijenin repo adresi,veriler vb. şeyler bullunur.
-git add = eklemek istediğimiz dosyalar o dizine eklenmesini sağlar.
-git rm = bir dosyayı dizinimizden kaldırmak için kullanılır.
-git commit = yaptığımızdeğişiklikten sonra bu komut ile değişikliliği kaydederiz
-git push = commitledğimiz dosyayı uzak sunucudaki repoya gönderir.
-git pull = uzak sunucudaki dosyalarda bir değişiklik oluştuysa kendi local proje dosyaları ile birleştirir.
-git merge = iki farklı branchı birleştirmeye yarar.
-git clone = mevcut bir git reposunun bir kopyasını almak istediğimizde bu komutu kullanırız.
+2005 yılında ilk sürümü yayınlanan git,2009 yılına kadar linux ile iç içe olan dağıtık versiyon kontrol sistemiydi.2009 yılında GitHubın açık kaynak projeler için ücretsiz bir şekilde hizmet vermesi aynı yıllarda Bitbucket ve GitLabın benzer git servisleri sağlamaya başlaması geniş bir kitleye ulaşmasını sağladı.␣␣ 
+dağıtık bir sürüm kontrol sistemidir.␣␣ 
+herhangi bir klosör komutlarla yeni bir git dosya deposu haline gelebilir.␣␣ 
+depolarda .git uzantısına sahip alt klasörler vardır.bu uzantıya sahip dosyalar güncel sürümleri ve eski sürümleri içerir.␣␣ 
+kendi projenizi versiyon kontrolü altına almak istediğiniz de git init komutu ile bunu sağlayabiliriz␣␣ 
+Windowsta git bash uygulaması ile yapılır.komutları aşağıda␣␣ 
+$ cd proje/klasörünüzün/yolu/␣␣ 
+$ git init␣␣ 
+Repistory = projenin uzak bir sunucuda depolanması .kısaltılmış hali repo dur␣␣ 
+Branch = Ana branch ve yan branch olarak ikye ayrılır.Bu yapı sayesinde ana yapıyı bozmadan yan branchlarla proje geliştirilebilir␣␣ 
+Master= Reponun Ana alanı .␣␣ 
+Commit = yapılan değişiklikleri saklayıp kaydedilmesine yarar.␣␣ 
+Chechout = commitler üzerinden geçiş yapmamızı sağlar.␣␣ 
+Fork = Reponun bir araya getirilmesidir.kopya üzerinde değişiklik yapıldıktan sonra ana depoya gönderilmesidir.␣␣ 
+git init = bu komut ile proje dizininde git dizini oluşturulur.burada prijenin repo adresi,veriler vb. şeyler bullunur.␣␣ 
+git add = eklemek istediğimiz dosyalar o dizine eklenmesini sağlar.␣␣ 
+git rm = bir dosyayı dizinimizden kaldırmak için kullanılır.␣␣ 
+git commit = yaptığımızdeğişiklikten sonra bu komut ile değişikliliği kaydederiz␣␣ 
+git push = commitledğimiz dosyayı uzak sunucudaki repoya gönderir.␣␣ 
+git pull = uzak sunucudaki dosyalarda bir değişiklik oluştuysa kendi local proje dosyaları ile birleştirir.␣␣ 
+git merge = iki farklı branchı birleştirmeye yarar.␣␣ 
+git clone = mevcut bir git reposunun bir kopyasını almak istediğimizde bu komutu kullanırız.␣␣ 
 
 
-CI/CD NEDİR?
-Sürekli entegrasyon ve Sürekli Dağıtım
-CI(Sürekli Entegrasyon) = paylaşılan bir depoda kod değişikliklerini otomaik oluşturur,tes eder ve entegre eder.
-CD(sürekli teslimat) = kod değişikliklerinde onay için otomatik olarak üretime hazır ortamlara iletir.
-sürekli dağıtım (CD) = kod değişikliklerini doğrudan müşterilere otomatik olarak dağıtır.
-Bunlar bir araya geldiğinde,Geliştirici ekiplerin manuel görevlerini azaltan otomatik bir sistem olan CI/CD hattı oluşur.
-Sistemin tekrar eden sürümleri destekleyecek şekilde tasarlanmalı.
-CI/CD kullanım
-CI : Build + Test
-dotnet restore paketleri çeker
-dotnet build : projeyi derler
-dotnet test : Unit testleri çalıştırır
-CD: Publish + Deploy
-dotnet publish : deploy edilecek klasörü hazırlar(Çalıştırabilir hale getirilir.)
-Azure Web app'a atılır
-Docker image oluşturulur
-IIS'e deploy edilir
-
-
-
-
-
-Azure DevOps
-yazılım geliştiren ekipler için tümleşik araçlar sağlayan bulut tabanl bir platformdur
-Temel Azure hizmetleri
--Azure Boards
--Azure Pipeline
--Azure Repos
--Azure Test plans
--Azure artifacts
-Azure Boards
-ekip arasında planlama ,izleme yapmak için kullanılır.birikmiş işler,özel raporlar için panolar oluşturulabilir.Bu panolar özlleştirilebilir ve izleme araçlarıyla anlamlı bilgiler edinebilirsin.
-Azure Repos
-kullanıcıların kod tabanlarını yönetmelerini sağlayan kod depolarıdır.Git sürüm kontrol sistemlerinide destekleyen bulut tabanlı depolardır.
-Azure Pipeline
-otomatik oluşturma,test etme ve dağıtım işlemlerini kolaylaştıran CI/CD aracıdır.
-Azure Testplans
-kullanıcıların test gereksinimlerini yönetebilmek için bulut tabanlı test platformunu entegre edebilemey olanak sağlar.
-Azure Artifactss
-paketleri oluşturmak, depolamak ve paylaşmak için kullanılan yapıt kitaplığı hizmetidirkullanıcıların tüm özelliklere sahip paket yönetimi işlevlerini CI/CD kanallarına entegre etmelerini sağlar.
+CI/CD NEDİR?␣␣ 
+Sürekli entegrasyon ve Sürekli Dağıtım␣␣ 
+CI(Sürekli Entegrasyon) = paylaşılan bir depoda kod değişikliklerini otomaik oluşturur,tes eder ve entegre eder.␣␣ 
+CD(sürekli teslimat) = kod değişikliklerinde onay için otomatik olarak üretime hazır ortamlara iletir.␣␣ 
+sürekli dağıtım (CD) = kod değişikliklerini doğrudan müşterilere otomatik olarak dağıtır.␣␣ 
+Bunlar bir araya geldiğinde,Geliştirici ekiplerin manuel görevlerini azaltan otomatik bir sistem olan CI/CD hattı oluşur.␣␣ 
+Sistemin tekrar eden sürümleri destekleyecek şekilde tasarlanmalı.␣␣ 
+CI/CD kullanım␣␣ 
+CI : Build + Test␣␣ 
+dotnet restore paketleri çeker␣␣ 
+dotnet build : projeyi derler␣␣ 
+dotnet test : Unit testleri çalıştırır␣␣ 
+CD: Publish + Deploy␣␣ 
+dotnet publish : deploy edilecek klasörü hazırlar(Çalıştırabilir hale getirilir.)␣␣ 
+Azure Web app'a atılır␣␣ 
+Docker image oluşturulur␣␣ 
+IIS'e deploy edilir␣␣ 
 
 
 
+
+
+Azure DevOps␣␣ 
+yazılım geliştiren ekipler için tümleşik araçlar sağlayan bulut tabanl bir platformdur␣␣ 
+Temel Azure hizmetleri␣␣ 
+-Azure Boards␣␣ 
+-Azure Pipeline␣␣ 
+-Azure Repos␣␣ 
+-Azure Test plans␣␣ 
+-Azure artifacts␣␣ 
+Azure Boards␣␣ 
+ekip arasında planlama ,izleme yapmak için kullanılır.birikmiş işler,özel raporlar için panolar oluşturulabilir.Bu panolar özlleştirilebilir ve izleme araçlarıyla anlamlı bilgiler edinebilirsin.␣␣ 
+Azure Repos␣␣ 
+kullanıcıların kod tabanlarını yönetmelerini sağlayan kod depolarıdır.Git sürüm kontrol sistemlerinide destekleyen bulut tabanlı depolardır.␣␣ 
+Azure Pipeline␣␣ 
+otomatik oluşturma,test etme ve dağıtım işlemlerini kolaylaştıran CI/CD aracıdır.␣␣ 
+Azure Testplans␣␣ 
+kullanıcıların test gereksinimlerini yönetebilmek için bulut tabanlı test platformunu entegre edebilemey olanak sağlar.␣␣ 
+Azure Artifactss␣␣ 
+paketleri oluşturmak, depolamak ve paylaşmak için kullanılan yapıt kitaplığı hizmetidirkullanıcıların tüm özelliklere sahip paket yönetimi işlevlerini CI/CD kanallarına entegre etmelerini sağlar.␣␣ 
 
 
 
 
 
 
-SDLC nedir?
-Bir yazılım geliştirme sürecindeki tüm faaliyetleri açıklayan kavram bütünüdür.Yüksek kalite ,etkili ve verimli yazılım geliştirmek ve zamanı minimum düzeyde tutmak için bir çerçevedir.Bu çerçeve belli aşamalrdan oluşurve her bir aşama bir sonraki aşamaya ürün bırakır.
-AŞAMALAR:
-1.ANALİZ
-Yazılım geliştirme sürecinin ilk aşaması analizdir.Bu aşamada kullanıcı ihtiyaçları belirlenir ve bunlar nasıl karşılanır düşünülür.
-2.PLANLAMA
-analiz bittikten sonraplanlama kısmına geçilir.Bu aşamada projenin nasıl ilerleyeceğine dair plan yapılır.Planlama sürecinde hangi programlama dili kullanılıcağı,hangi araçların kullanılacağı ve ne kadar zaman süreceği planlanmaktadır.
-3.TASARIM
-planlama kısmı bittikten sonra tasarım kısmına geçilir.Bu aşamada arayüzler tasarlanır veya işlevler belirlenir.
-4.GELİŞTİRME
-Bu aşamada yazılım kodu yazılır.Geliştirme Sürecinde yazılımın kullanıcı ihtiyaçlarına yönelik olduğuna dairemin olunmalıdır.
-5.TEST ETME
-Bu aşamada ,yazılımın doğru çalışıp çalışmadığı kontrol edilir.hata olup olmadığı ,güvenliği,performansı gibi faktörler dikkate alınır.
-AGİLE metodolojisi
-Yazılım geliştirme projelerinde katı ve sabit planlar yerine , gereksinimlere göre değişen ortama hızlı uyum sağlamayı hedefleyen br metodolojidir.Proje küçük parçalara bölünerek her parça üzerinde ayrı ayrı çalışılır.takım çalışmasına teşvik eder ve ekip üyeleri arasında sürekli bir iletişim olur
-SCRUM nedir?
-Agile metodolojisinin parçası olan bir çerçevedir.bu çerçeve belirli roller ve yapılar etrafında organize edilir.kısa dögüler halinde çalışılır ve bu döngülere sprint adı verilir.her sprint sonunda hedeflenen ürün veya iş ortaya çıkar.
-Scrum takımında Roller
-1.Scrum Master : takımın kurallara uygun çalışmasını sağlar ve engelleri kaldırır.işbirliğini teşvik eder.Motivasyonu yüksek tutarak projenin hedeflerine ulaşmasını sağlar.
-2.Product Owner:müşteri gereksinimini belirler.Müşteriden gelen feedbackleri toplar ve buna göre öncelikleri belirler.
-3.Geliştirme Takımı :yazılım geliştiren ve teslim eden ekip üyelerinde oluşur.belirlenen hedeflere ulaşmak için birlikte çalışır ve her sprint sonunda işlevsel bir yazılım parçasını tamamlar.
+
+
+
+SDLC nedir?␣␣ 
+Bir yazılım geliştirme sürecindeki tüm faaliyetleri açıklayan kavram bütünüdür.Yüksek kalite ,etkili ve verimli yazılım geliştirmek ve zamanı minimum düzeyde tutmak için bir çerçevedir.Bu çerçeve belli aşamalrdan oluşurve her bir aşama bir sonraki aşamaya ürün bırakır.␣␣ 
+AŞAMALAR:␣␣ 
+1.ANALİZ␣␣ 
+Yazılım geliştirme sürecinin ilk aşaması analizdir.Bu aşamada kullanıcı ihtiyaçları belirlenir ve bunlar nasıl karşılanır düşünülür.␣␣ 
+2.PLANLAMA␣␣ 
+analiz bittikten sonraplanlama kısmına geçilir.Bu aşamada projenin nasıl ilerleyeceğine dair plan yapılır.Planlama sürecinde hangi programlama dili kullanılıcağı,hangi araçların kullanılacağı ve ne kadar zaman süreceği planlanmaktadır.␣␣ 
+3.TASARIM␣␣ 
+planlama kısmı bittikten sonra tasarım kısmına geçilir.Bu aşamada arayüzler tasarlanır veya işlevler belirlenir.␣␣ 
+4.GELİŞTİRME␣␣ 
+Bu aşamada yazılım kodu yazılır.Geliştirme Sürecinde yazılımın kullanıcı ihtiyaçlarına yönelik olduğuna dairemin olunmalıdır.␣␣ 
+5.TEST ETME␣␣ 
+Bu aşamada ,yazılımın doğru çalışıp çalışmadığı kontrol edilir.hata olup olmadığı ,güvenliği,performansı gibi faktörler dikkate alınır.␣␣ 
+AGİLE metodolojisi␣␣ 
+Yazılım geliştirme projelerinde katı ve sabit planlar yerine , gereksinimlere göre değişen ortama hızlı uyum sağlamayı hedefleyen br metodolojidir.Proje küçük parçalara bölünerek her parça üzerinde ayrı ayrı çalışılır.takım çalışmasına teşvik eder ve ekip üyeleri arasında sürekli bir iletişim olur␣␣ 
+SCRUM nedir?␣␣ 
+Agile metodolojisinin parçası olan bir çerçevedir.bu çerçeve belirli roller ve yapılar etrafında organize edilir.kısa dögüler halinde çalışılır ve bu döngülere sprint adı verilir.her sprint sonunda hedeflenen ürün veya iş ortaya çıkar.␣␣ 
+Scrum takımında Roller␣␣ 
+1.Scrum Master : takımın kurallara uygun çalışmasını sağlar ve engelleri kaldırır.işbirliğini teşvik eder.Motivasyonu yüksek tutarak projenin hedeflerine ulaşmasını sağlar.␣␣ 
+2.Product Owner:müşteri gereksinimini belirler.Müşteriden gelen feedbackleri toplar ve buna göre öncelikleri belirler.␣␣ 
+3.Geliştirme Takımı :yazılım geliştiren ve teslim eden ekip üyelerinde oluşur.belirlenen hedeflere ulaşmak için birlikte çalışır ve her sprint sonunda işlevsel bir yazılım parçasını tamamlar.␣␣ 
 
 
 
 
-GitHub Actions nedir?
-yazılım geliştirme sürecinde otomatik iş akışları tanımlamak için kullanılan ,Github tarafından sağlanan bir CI/CD sistemidir.
-Pipeline(İŞ akışı nedir?)
-yazılım geliştirme sürecinde birbirini takip eden otomatik adımlar dizisidir.Github Actions da
-pipline ,bir veya birden fazla görev ve bu görevlerin içinde yer alan steps(adımlar) biçiminde yapılandırılır.
-3. Yapılandırma Dosyası
-GitHub Actions iş akışları, projenin kök dizininde yer alan .github/workflows/ klasörü altında bir YAML dosyası olarak tanımlanır. Bu dosyada, iş akışının hangi olayla tetikleneceği, hangi sistemde çalışacağı ve hangi adımların gerçekleştirileceği belirtilir.
-Örnek: Basit Bir "Hello World" Workflow
-Bu örnek yapı, her push işlemi gerçekleştiğinde tetiklenir ve basit bir mesajı terminale yazdırır. Örnekte bir adet job ve onun içinde bir adet step yer almaktadır.
+GitHub Actions nedir?␣␣ 
+yazılım geliştirme sürecinde otomatik iş akışları tanımlamak için kullanılan ,Github tarafından sağlanan bir CI/CD sistemidir.␣␣ 
+Pipeline(İŞ akışı nedir?)␣␣ 
+yazılım geliştirme sürecinde birbirini takip eden otomatik adımlar dizisidir.Github Actions da␣␣ 
+pipline ,bir veya birden fazla görev ve bu görevlerin içinde yer alan steps(adımlar) biçiminde yapılandırılır.␣␣ 
+3. Yapılandırma Dosyası␣␣ 
+GitHub Actions iş akışları, projenin kök dizininde yer alan .github/workflows/ klasörü altında bir YAML dosyası olarak tanımlanır. Bu dosyada, iş akışının hangi olayla tetikleneceği, hangi sistemde çalışacağı ve hangi adımların gerçekleştirileceği belirtilir.␣␣ 
+Örnek: Basit Bir "Hello World" Workflow␣␣ 
+Bu örnek yapı, her push işlemi gerçekleştiğinde tetiklenir ve basit bir mesajı terminale yazdırır. Örnekte bir adet job ve onun içinde bir adet step yer almaktadır.␣␣ 
 
 
 
 
-.Net Nedir?
-.NET'in çeşitli uygulamaları, .NET kodunun Linux, macOS, Windows, iOS, Android ve diğer işletim sistemlerinde çalıştırılmasına izin verir.
-.NET Tarihçesi
-2000-2007
-ilk beta sürümü 2000 yılının sonunda yayınlandı ve 13 Şubat 2002 de ilk sürüm olan .NET 1.0 yayınlandı.temel özelliği web uygulamalarının nesne yönelimli geliştirilmesini destekliyordu.
-NET 1.1 (Nisan 2003): Bir dizi geliştirme (örneğin ASP.NET için güvenlik geliştirmeleri), İnternet Protokolü Sürüm 6 desteği ve ODBC içeriyordu.
-.NET 2.0 (Kasım 2005): Genel koleksiyonlar, yineleyiciler, ASP.NET için yeni özellikler, geçersiz türler vb. içeriyordu.
-.NET 3.0 (Kasım 2006): öne çıkanlar WPF (Windows Presentation Foundation), WCF (Windows Communication Foundation), WWF (Windows Workflow Foundation).
-2007
-kaynak kodu kullanıma sunuldu.Bu sürüme .NET3.5 adı verildi.bu sürümün temel özellikleri şunlardı:
-AJAX desteği,
-Dinamik veriler,
-LINQ 
-ASP.Net MVC
-Microsoft, 2014 yılına kadar çerçevenin birkaç versiyonunu daha yayınladı:
-.NET 4.0 (Nisan 2010): Yönetilen Genişletilebilirlik Çerçevesi, DLR, görev paralel kütüphanesi, Razor görünüm motoru.
-.NET 4.5 (Ağustos 2012): Async desteği, daha iyi ASP.NET desteği, Zip sıkıştırma desteği, geliştirilmiş CLR 4.0
-.NET 4.5.1 (Ekim 2013): daha iyi performans ve hata ayıklama, Windows Mağazası uygulama geliştirme için gelişmiş destek.
-2014 .NET Core'un başlangıcı
-Bu zamana kadar .NET ' in en büyük kusuru windows dışındaki platformlarda çalışamamsıdır.Bu sorunu çözmek için Microsoft 2014 yılında .NET Core duyurdu.
-.NET ile neler yapılabilir?
-.NET ile kullanarak şu uygulamalar geliştirilebilir:
-Windows Uygulamaları,
-Windows Phone Uygulamaları,
-Web Uygulamaları (ASP.Net),
-Oyunlar
-Mobil Uygulamalar
-Windows Azure ile cloud uygulamaları,
-MS Office için eklentiler,
-Veri tabanı uygulamaları 
-.NET'in avantajları Nelerdir?
-Geliştirme Kolaylığı
-Zaman Tasarufu
-Yüksek performanslı uygulamalar oluşturma
-Güvenilirlik
-Zengin Kaynak ve kitaplıklar
-Topluluk desteği
+.Net Nedir?␣␣ 
+.NET'in çeşitli uygulamaları, .NET kodunun Linux, macOS, Windows, iOS, Android ve diğer işletim sistemlerinde çalıştırılmasına izin verir.␣␣ 
+.NET Tarihçesi␣␣ 
+2000-2007␣␣ 
+ilk beta sürümü 2000 yılının sonunda yayınlandı ve 13 Şubat 2002 de ilk sürüm olan .NET 1.0 yayınlandı.temel özelliği web uygulamalarının nesne yönelimli geliştirilmesini destekliyordu.␣␣ 
+NET 1.1 (Nisan 2003): Bir dizi geliştirme (örneğin ASP.NET için güvenlik geliştirmeleri), İnternet Protokolü Sürüm 6 desteği ve ODBC içeriyordu.␣␣ 
+.NET 2.0 (Kasım 2005): Genel koleksiyonlar, yineleyiciler, ASP.NET için yeni özellikler, geçersiz türler vb. içeriyordu.␣␣ 
+.NET 3.0 (Kasım 2006): öne çıkanlar WPF (Windows Presentation Foundation), WCF (Windows Communication Foundation), WWF (Windows Workflow Foundation).␣␣ 
+2007␣␣ 
+kaynak kodu kullanıma sunuldu.Bu sürüme .NET3.5 adı verildi.bu sürümün temel özellikleri şunlardı:␣␣ 
+AJAX desteği,␣␣ 
+Dinamik veriler,␣␣ 
+LINQ ␣␣ 
+ASP.Net MVC␣␣ 
+Microsoft, 2014 yılına kadar çerçevenin birkaç versiyonunu daha yayınladı:␣␣ 
+.NET 4.0 (Nisan 2010): Yönetilen Genişletilebilirlik Çerçevesi, DLR, görev paralel kütüphanesi, Razor görünüm motoru.␣␣ 
+.NET 4.5 (Ağustos 2012): Async desteği, daha iyi ASP.NET desteği, Zip sıkıştırma desteği, geliştirilmiş CLR 4.0␣␣ 
+.NET 4.5.1 (Ekim 2013): daha iyi performans ve hata ayıklama, Windows Mağazası uygulama geliştirme için gelişmiş destek.␣␣ 
+2014 .NET Core'un başlangıcı␣␣ 
+Bu zamana kadar .NET ' in en büyük kusuru windows dışındaki platformlarda çalışamamsıdır.Bu sorunu çözmek için Microsoft 2014 yılında .NET Core duyurdu.␣␣ 
+.NET ile neler yapılabilir?␣␣ 
+.NET ile kullanarak şu uygulamalar geliştirilebilir:␣␣ 
+Windows Uygulamaları,␣␣ 
+Windows Phone Uygulamaları,␣␣ 
+Web Uygulamaları (ASP.Net),␣␣ 
+Oyunlar␣␣ 
+Mobil Uygulamalar␣␣ 
+Windows Azure ile cloud uygulamaları,␣␣ 
+MS Office için eklentiler,␣␣ 
+Veri tabanı uygulamaları ␣␣ 
+.NET'in avantajları Nelerdir?␣␣ 
+Geliştirme Kolaylığı␣␣ 
+Zaman Tasarufu␣␣ 
+Yüksek performanslı uygulamalar oluşturma␣␣ 
+Güvenilirlik␣␣ 
+Zengin Kaynak ve kitaplıklar␣␣ 
+Topluluk desteği␣␣ 
 
 
 <img width="554" height="479" alt="image" src="https://github.com/user-attachments/assets/c2a31f66-db2a-49e5-b500-2b2773b17c3a" />
