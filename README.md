@@ -95,8 +95,6 @@ Scrum takımında Roller␣␣ <br>
 3.Geliştirme Takımı :yazılım geliştiren ve teslim eden ekip üyelerinde oluşur.belirlenen hedeflere ulaşmak için birlikte çalışır ve her sprint sonunda işlevsel bir yazılım parçasını tamamlar.␣␣ 
 
 
-
-
 GitHub Actions nedir?␣␣ <br>
 yazılım geliştirme sürecinde otomatik iş akışları tanımlamak için kullanılan ,Github tarafından sağlanan bir CI/CD sistemidir.␣␣ <br>
 Pipeline(İŞ akışı nedir?)␣␣ <br>
@@ -106,8 +104,6 @@ pipline ,bir veya birden fazla görev ve bu görevlerin içinde yer alan steps(a
 GitHub Actions iş akışları, projenin kök dizininde yer alan .github/workflows/ klasörü altında bir YAML dosyası olarak tanımlanır. Bu dosyada, iş akışının hangi olayla tetikleneceği, hangi sistemde çalışacağı ve hangi adımların gerçekleştirileceği belirtilir.␣␣ <br>
 Örnek: Basit Bir "Hello World" Workflow␣␣ <br>
 Bu örnek yapı, her push işlemi gerçekleştiğinde tetiklenir ve basit bir mesajı terminale yazdırır. Örnekte bir adet job ve onun içinde bir adet step yer almaktadır.␣␣ 
-
-
 
 
 .Net Nedir?␣␣ <br>
@@ -148,12 +144,7 @@ Güvenilirlik␣␣ <br>
 Zengin Kaynak ve kitaplıklar␣␣ <br>
 Topluluk desteği␣␣ 
 
-
 <img width="554" height="479" alt="image" src="https://github.com/user-attachments/assets/c2a31f66-db2a-49e5-b500-2b2773b17c3a" />
-
-
-
-
 
 Senkron ve Asenkron Programlama<br>
 Senkron Programlama<br>
