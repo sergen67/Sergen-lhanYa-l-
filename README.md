@@ -1,4 +1,4 @@
-Git nedir
+Git nedir<br>
 2005 yılında ilk sürümü yayınlanan git,2009 yılına kadar linux ile iç içe olan dağıtık versiyon kontrol sistemiydi.2009 yılında GitHubın açık kaynak projeler için ücretsiz bir şekilde hizmet vermesi aynı yıllarda Bitbucket ve GitLabın benzer git servisleri sağlamaya başlaması geniş bir kitleye ulaşmasını sağladı.␣␣ 
 dağıtık bir sürüm kontrol sistemidir.␣␣ 
 herhangi bir klosör komutlarla yeni bir git dosya deposu haline gelebilir.␣␣ 
